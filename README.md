@@ -1,7 +1,7 @@
 Atividade realizada com base no exercício proposto no site: https://rpaexercise.aisingapore.org/
 
 Bibliotecas utilizadas no processo:
-Pandas
+Pandas e
 Selenium 4
 
 Para inciar o processo:
