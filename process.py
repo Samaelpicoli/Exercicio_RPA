@@ -19,7 +19,7 @@ def login(driver, wdw, username, password):
     except Exception as e:
         print('Erro no login')
         print(e)
-        return False
+        raise Exception('Erro ao fazer o login')
 
 def inserir_dados(driver, wdw, df):
     #insere os dados do arquivo CSV nos campos solicitados
@@ -52,7 +52,7 @@ def inserir_dados(driver, wdw, df):
     except Exception as e:
         print('Erro ao inserir os dados')
         print(e)
-        return False
+        raise Exception('Erro durante a inserção de dados')
 
 def avaliar_dados(driver, wdw, df):
     #Avalia se o candidato será aprovado ou rejeitado, a partir da coleta de alguns dados
@@ -88,4 +88,4 @@ def avaliar_dados(driver, wdw, df):
     except Exception as e:
         print('Erro ao avaliar dados')
         print(e)
-        return False
+        raise Exception('Erro ao avaliar os dados')
