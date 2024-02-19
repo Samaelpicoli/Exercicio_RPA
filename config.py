@@ -1,12 +1,5 @@
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.support.ui import WebDriverWait
+#nesse arquivo vou armazenar o usuário e a senha
+#esses dados estão disponíves no site do exercício
 
-
-options = webdriver.ChromeOptions()
-options.add_argument("--disable-notifications")
-driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
-wdw = WebDriverWait(driver, 40)
-
-username = 'jane007'
-password = 'TheBestHR123'
+usuario = 'jane007'
+senha = 'TheBestHR123'
