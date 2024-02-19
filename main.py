@@ -12,7 +12,7 @@ import requests
 #MÓDULOS UTILIZADOS NO PROCESSO
 from config import usuario, senha
 import processo 
-import pega_arquivo as get
+import pega_arquivo 
 
 status_loop = 'ON'
 estado = 'INITIALIZATION'
@@ -37,7 +37,7 @@ while status_loop == 'ON':
             
         case 'GET TRANSACTION':
             try:
-                nome_arquivo = get.solicitar_csv()
+                nome_arquivo = pega_arquivo.solicitar_csv()
                 arquivo = pd.read_csv(nome_arquivo, sep=',')
                 estado = 'PROCESS'
                 continue
