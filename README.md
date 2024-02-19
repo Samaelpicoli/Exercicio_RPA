@@ -58,5 +58,10 @@ pip install -r requirements.txt
 # Executar o projeto
 python main.py
 
+## Observações:
+
+Por ser uma automação web baseada no código fonte do site e utilizando Xpaths, Ids e Class, pode ser que em 
+algum momento a automação pare de funcionar caso o site mude.
+
 # Autor
 Samael Muniz Picoli
