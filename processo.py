@@ -71,4 +71,3 @@ def avaliar_dados(driver, wdw, arquivo):
     if 'Congratulations' in finished:
         driver.save_screenshot('Congratulations.png')
         print('Sucesso')
-    
